@@ -39,6 +39,11 @@ arc-gtk-theme     GTK theme
 lxappearance      Theme switcher
 i3lock-color      Lock screen with custom ring
 imagemagick       Pre-blur wallpaper for lockscreen
+dunst             Notification daemon
+libnotify         Send notifications
+xclip             Clipboard support
+scrot             Screenshot tool
+networkmanager    Network management
 
 ─────────────────────
 INSTALLATION STEPS
