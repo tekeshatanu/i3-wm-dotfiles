@@ -9,5 +9,5 @@ case "$chosen" in
   "  Logout")    i3-msg exit ;;
   "  Reboot")    systemctl reboot ;;
   "  Shutdown")  systemctl poweroff ;;
-  "  Lock")      i3lock -c 0d0d0d ;;
+  "  Lock")      ~/.config/i3/lock.sh ;;
 esac
