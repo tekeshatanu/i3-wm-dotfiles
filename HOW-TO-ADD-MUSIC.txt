@@ -1,0 +1,100 @@
+nano ~/Cyan-Monochrome-Dotfiles/HOW-TO-ADD-MUSIC.txt
+```
+
+Paste:
+```
+═══════════════════════════════════════════
+   HOW TO ADD NEW SONGS
+   Cyan-Monochrome Dotfiles
+═══════════════════════════════════════════
+
+STEP 1 — Add your music files
+──────────────────────────────
+Copy or move your songs to the Music folder:
+
+   ~/Music/
+
+Supported formats:
+   mp3, flac, wav, ogg, m4a, opus
+
+You can organize in subfolders too:
+   ~/Music/Artist Name/
+   ~/Music/Album Name/
+   ~/Music/Playlists/
+
+STEP 2 — Update MPD database
+──────────────────────────────
+Open terminal and run:
+
+   mpc update
+
+Wait a few seconds for MPD to scan
+your Music folder.
+
+STEP 3 — Add songs to playlist
+──────────────────────────────
+To add ALL songs in Music folder:
+
+   mpc clear
+   mpc add /
+   mpc play
+
+To add a specific folder only:
+
+   mpc add "Artist Name/"
+   mpc play
+
+STEP 4 — Control playback
+──────────────────────────────
+From terminal:
+
+   mpc play       Start playing
+   mpc pause      Pause
+   mpc toggle     Play/Pause toggle
+   mpc next       Next song
+   mpc prev       Previous song
+   mpc stop       Stop playback
+   mpc current    Show current song
+   mpc playlist   Show full playlist
+   mpc shuffle    Shuffle playlist
+   mpc repeat on  Enable repeat
+
+From Polybar:
+   Click ⏮ to go previous
+   Click ▶ or ⏸ to play/pause
+   Click ⏭ to go next
+
+STEP 5 — Using ncmpcpp (full music player)
+──────────────────────────────
+For a full terminal music player UI run:
+
+   ncmpcpp
+
+Inside ncmpcpp:
+   1        Library view
+   2        Playlist view
+   3        File browser
+   Space    Play/Pause
+   >        Next song
+   <        Previous song
+   q        Quit (music keeps playing)
+
+═══════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════
+
+Songs not showing after mpc update?
+   killall mpd
+   mpd ~/.config/mpd/mpd.conf
+   mpc update
+
+MPD not starting on boot?
+   Add this to ~/.config/i3/config:
+   exec --no-startup-id mpd ~/.config/mpd/mpd.conf
+
+Polybar not showing song name?
+   Make sure MPD is running:
+   pgrep mpd && echo "MPD running"
+
+   Then start playing:
+   mpc play

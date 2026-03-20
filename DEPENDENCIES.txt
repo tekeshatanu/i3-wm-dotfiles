@@ -1,0 +1,96 @@
+nano ~/Cyan-Monochrome-Dotfiles/DEPENDENCIES.txt
+```
+
+Paste this:
+```
+═══════════════════════════════════════════
+   Cyan-Monochrome Dotfiles
+   Guided & Designed with Claude AI
+═══════════════════════════════════════════
+
+INSTALL ALL PACKAGES
+─────────────────────
+sudo pacman -S i3-gaps polybar alacritty rofi feh thunar \
+  mpd mpc ncmpcpp picom papirus-icon-theme \
+  ttf-jetbrains-mono-nerd noto-fonts \
+  pulseaudio pulseaudio-alsa pavucontrol \
+  network-manager-applet scrot lxappearance
+
+From AUR:
+yay -S starship arc-gtk-theme
+
+─────────────────────
+PACKAGE PURPOSE
+─────────────────────
+i3-gaps           Window manager
+polybar           Status bar
+alacritty         Terminal
+rofi              App launcher
+feh               Wallpaper setter
+thunar            File manager
+mpd               Music daemon
+mpc               Music controller
+ncmpcpp           Music player TUI
+picom             Compositor
+papirus-icon-theme  Icons
+ttf-jetbrains-mono-nerd  Font
+noto-fonts        Symbols font
+pulseaudio        Audio
+pavucontrol       Volume GUI
+network-manager-applet  Network
+scrot             Screenshots
+starship          Shell prompt
+arc-gtk-theme     GTK theme
+lxappearance      Theme switcher
+
+─────────────────────
+INSTALLATION STEPS
+─────────────────────
+1. Install packages above
+2. Copy config/* to ~/.config/
+3. Copy starship.toml to ~/.config/
+4. Copy .bashrc to ~/
+5. Make scripts executable:
+   chmod +x ~/.config/polybar/launch.sh
+   chmod +x ~/.config/polybar/playpause.sh
+   chmod +x ~/.config/rofi/powermenu.sh
+   chmod +x ~/.config/i3/init-workspaces.sh
+6. Add wallpaper to ~/wallpapers/wall.jpg
+7. Add music to ~/Music/
+8. Log into i3 session
+9. Run: mpc update && mpc add / && mpc play
+
+─────────────────────
+KEYBINDINGS
+─────────────────────
+Super+Enter        Terminal
+Super+D            Rofi launcher
+Super+E            Thunar
+Super+B            Firefox
+Super+Q            Close window
+Super+F            Fullscreen
+Super+Shift+R      Reload i3
+Super+Shift+E      Power menu
+Super+1-4          Switch workspace
+Super+Shift+1-4    Move to workspace
+Super+H/J/K/L      Focus windows
+Super+Shift+H/J/K/L  Move windows
+Super+R            Resize mode
+
+─────────────────────
+COLORS
+─────────────────────
+Background  #0d0d0d
+Surface     #1a1a1a
+Border      #2a2a2a
+Inactive    #555555
+Foreground  #cccccc
+Accent      #89DCEB
+Urgent      #e06c75
+
+─────────────────────
+CREDITS
+─────────────────────
+Built by     : Shatanu Teke [From India]
+Guided by    : Claude AI - Anthropic
+Inspired by  : Archcraft Openbox Edition

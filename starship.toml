@@ -1,0 +1,27 @@
+format = """
+[╭─](fg:#2a2a2a)$os$directory$git_branch$git_status
+[╰─](fg:#2a2a2a)$character"""
+
+[os]
+disabled = false
+style = "fg:#89DCEB"
+
+[os.symbols]
+Linux = "󰌽 "
+Arch  = "󰣇 "
+
+[directory]
+style = "fg:#cccccc"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style  = "fg:#89DCEB"
+
+[git_status]
+style = "fg:#e06c75"
+
+[character]
+success_symbol = "[❯](fg:#89DCEB)"
+error_symbol   = "[❯](fg:#e06c75)"
