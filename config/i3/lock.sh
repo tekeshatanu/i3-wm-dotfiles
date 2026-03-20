@@ -1,0 +1,28 @@
+#!/bin/bash
+i3lock \
+  --image ~/wallpapers/wall-blur.jpg \
+  --fill \
+  --ring-color=89DCEBff \
+  --keyhl-color=89DCEBff \
+  --ringver-color=89DCEBff \
+  --ringwrong-color=e06c75ff \
+  --inside-color=1a1a1a99 \
+  --line-color=00000000 \
+  --separator-color=00000000 \
+  --verif-color=89DCEBff \
+  --wrong-color=e06c75ff \
+  --time-color=ccccccff \
+  --date-color=89DCEBff \
+  --clock \
+  --time-str="%I:%M %p" \
+  --date-str="%d %B %Y" \
+  --time-font="JetBrainsMono Nerd Font" \
+  --date-font="JetBrainsMono Nerd Font" \
+  --time-size=72 \
+  --date-size=36 \
+  --radius=60 \
+  --ring-width=4 \
+  --ind-pos="x+w/2:y+h/2+200" \
+  --time-pos="x+w/2:y+h/2+100" \
+  --date-pos="x+w/2:y+h/2+130" \
+  --nofork
