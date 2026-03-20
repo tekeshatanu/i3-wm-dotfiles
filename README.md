@@ -3,8 +3,7 @@ i3-wm minimal cyan-monochrome setup for low-end pcs [ Working on it ]
 
 # Note
 It's not have animation .conf file.
-It isn't have any notification, screenshot, battery, etc. tools or utilities.
-To make it very lightweight I avoid these but you can add them by yourself.
+Because it will be too much RAM consuming.
 
 # Cyan-Monochrome Dotfiles 🗡️
 
