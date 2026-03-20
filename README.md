@@ -5,6 +5,10 @@ i3-wm minimal cyan-monochrome setup for low-end pcs [ Working on it ]
 It's not have animation .conf file.
 Because it will be too much RAM consuming.
 
+And the Screenshot of the XFCE Desktop Environment of Archman linux is just for EXTRAS.
+
+And one more thing is that Archman linux is comes with Default XFCE DE.
+
 # Cyan-Monochrome Dotfiles 🗡️
 
 A minimal lightweight i3-gaps rice built for low-end hardware.
