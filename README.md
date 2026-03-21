@@ -26,8 +26,8 @@ Runs smoothly on a 2010 PC with just 2GB RAM!
 - Music: MPD + mpc
 - File Manager: Thunar
 - Compositor: Picom
-- Icons: Papirus-Dark
-- GTK: Arc-Dark
+- Icons: Papirus-Dark / Tela-Dark icon pack
+- GTK: Arc-Dark / Orchies Black Dark themes
 - Font: JetBrainsMono Nerd Font
 - Notifications: Dunst
 - Lock Screen: i3lock-color
